@@ -1,0 +1,13 @@
+{
+  "name": "blockchain-api",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "author": "",
+  "dependencies": {
+    "iroha-lib": "^0.1.0",
+    "request": "2.83.0",
+    "restify": "6.3.4"
+  }
+}

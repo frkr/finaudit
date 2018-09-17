@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {CONTEXT} from './constants';
+import {CONTEXT_BLOCKCHAIN} from './constants';
 
 class App extends Component {
 
@@ -9,7 +10,8 @@ class App extends Component {
     }
 
     componentDidMount() {
-        fetch(CONTEXT + "/rs/teste").then((response) => response.text()).then((texto) => this.setState({texto}));
+        // fetch(CONTEXT + "/rs/teste").then((response) => response.text()).then((texto) => this.setState({texto}));
+        fetch(CONTEXT_BLOCKCHAIN + "/teste").then((response) => response.json()).then((texto) => this.setState({texto}));
     }
 
     render() {

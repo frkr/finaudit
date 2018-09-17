@@ -1,10 +1,6 @@
 # Docs
-- https://hyperledger.github.io/iroha-api/#entity-relationship-model
-- https://iroha.readthedocs.io/en/latest/api/commands.html
 - https://iroha.readthedocs.io/en/latest/getting_started/index.html
-- https://iroha.readthedocs.io/en/latest/guides/deployment.html
-- https://hyperledger.github.io/iroha-api/#create-genesis-block
-- https://hyperledger.github.io/iroha-api/#command-line-interface
+- https://hyperledger.github.io/iroha-api/?protobuf#add-asset-quantity
 
 ### Iroha
 #### Network

@@ -7,3 +7,4 @@ try {
 }
 
 export const CONTEXT = apiBaseUrl;
+export const CONTEXT_BLOCKCHAIN = "http://localhost:8084";
