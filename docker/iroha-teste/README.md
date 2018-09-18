@@ -1,10 +1,9 @@
-# Testes
-
+# PIPED Test
 ```bash
-docker run -it --rm --network=iroha-network frkr/iroha-cli admin@test f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70 313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910 \
-param
+docker run --rm --network=iroha-network frkr/iroha-ex admin@test f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70 313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910 \
+2\\n9\\nadmin@test\\n1\\nirohad-zero\\n50051\\n
 ```
-- Params
+# Iroha Params
 ```
     -account_name (Name of the account. Must be unique in iroha network)
       type: string default: ""
@@ -31,6 +30,5 @@ docker run -it --rm --network=iroha-network --entrypoint=/bin/bash hyperledger/i
 echo f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70 > admin@test.priv
 echo 313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910 > admin@test.pub
 
-iroha-cli -account_name admin@test --key_path ./
-
+iroha-cli -account_name admin@test --key_path ./ 
 ```
