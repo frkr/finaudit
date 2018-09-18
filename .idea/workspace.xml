@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f8a0eae-43b9-491e-8b7d-c76bc0e63ec9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docker/iroha-cli-teste/admin@test.priv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/iroha-cli-teste/admin@test.pub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/iroha-cli-teste/test@test.priv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/iroha-cli-teste/test@test.pub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/iroha-ca/iroha-ca.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/iroha-ca/iroha-ca.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/service/TesteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/service/TesteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/react/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/react/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/react/src/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/java/target/" />
@@ -78,15 +83,15 @@
     <session id="-2118714807">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,7 +107,7 @@
           <entry key="css" value="1" />
           <entry key="docker" value="1" />
           <entry key="domain" value="2" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="height_by_account_set" value="2" />
           <entry key="height_by_hash" value="2" />
           <entry key="html" value="1" />
@@ -110,18 +115,19 @@
           <entry key="iml" value="1" />
           <entry key="index_by_creator_height" value="2" />
           <entry key="index_by_id_height_asset" value="2" />
-          <entry key="java" value="34" />
-          <entry key="js" value="25" />
+          <entry key="java" value="41" />
+          <entry key="js" value="28" />
           <entry key="json" value="13" />
-          <entry key="md" value="12" />
+          <entry key="md" value="13" />
           <entry key="meta" value="1" />
+          <entry key="mmd" value="1" />
           <entry key="ordering_service_state" value="2" />
           <entry key="peer" value="3" />
           <entry key="postgres" value="1" />
           <entry key="priv" value="4" />
           <entry key="properties" value="2" />
-          <entry key="proto" value="10" />
-          <entry key="pub" value="4" />
+          <entry key="proto" value="11" />
+          <entry key="pub" value="5" />
           <entry key="role" value="2" />
           <entry key="role_has_permissions" value="2" />
           <entry key="sh" value="19" />
@@ -129,7 +135,7 @@
           <entry key="svg" value="1" />
           <entry key="ts" value="1" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="16" />
+          <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -141,17 +147,17 @@
           <entry key="HTML" value="1" />
           <entry key="HTTP Request" value="2" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="34" />
+          <entry key="JAVA" value="41" />
           <entry key="JSON" value="13" />
-          <entry key="JavaScript" value="25" />
-          <entry key="Markdown" value="12" />
-          <entry key="PLAIN_TEXT" value="28" />
-          <entry key="PROTO" value="9" />
+          <entry key="JavaScript" value="28" />
+          <entry key="Markdown" value="13" />
+          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="PROTO" value="10" />
           <entry key="Properties" value="2" />
           <entry key="SQL" value="1" />
           <entry key="SVG" value="1" />
           <entry key="TypeScript" value="1" />
-          <entry key="XML" value="16" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -159,15 +165,16 @@
           <entry key="Dockerfile" value="155" />
           <entry key="bat" value="43" />
           <entry key="docker" value="1" />
+          <entry key="gitignore" value="15" />
           <entry key="html" value="46" />
           <entry key="http" value="58" />
-          <entry key="java" value="727" />
-          <entry key="js" value="212" />
+          <entry key="java" value="783" />
+          <entry key="js" value="307" />
           <entry key="json" value="9" />
-          <entry key="md" value="1633" />
+          <entry key="md" value="1646" />
           <entry key="properties" value="2" />
           <entry key="sh" value="865" />
-          <entry key="txt" value="162" />
+          <entry key="txt" value="180" />
           <entry key="xml" value="344" />
         </counts>
       </usages-collector>
@@ -177,11 +184,11 @@
           <entry key="Dockerfile" value="155" />
           <entry key="HTML" value="46" />
           <entry key="HTTP Request" value="58" />
-          <entry key="JAVA" value="727" />
+          <entry key="JAVA" value="783" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="212" />
-          <entry key="Markdown" value="1593" />
-          <entry key="PLAIN_TEXT" value="206" />
+          <entry key="JavaScript" value="307" />
+          <entry key="Markdown" value="1606" />
+          <entry key="PLAIN_TEXT" value="239" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="344" />
         </counts>
@@ -242,16 +249,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker/iroha-cli-teste/admin@test.pub">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="510">
-                <caret line="30" selection-start-line="30" selection-end-line="30" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/docker/iroha-cli-teste/README.mmd">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -285,12 +290,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/github/frkr/reactboot/ReactBootApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/frkr/reactboot/config/audit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/frkr/reactboot/config/audit2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/frkr/reactboot/config/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/react/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/react/src/App.js" />
         <option value="$PROJECT_DIR$/src/main/react/src/index.js" />
@@ -316,14 +318,10 @@
         <option value="$PROJECT_DIR$/docker/iroha-local/Dockerfile" />
         <option value="$PROJECT_DIR$/docker/iroha-local/testes.http" />
         <option value="$PROJECT_DIR$/java/src/main/proto/GreetingService.proto" />
-        <option value="$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/Teste.java" />
-        <option value="$PROJECT_DIR$/java/pom.xml" />
         <option value="$PROJECT_DIR$/node/package.json" />
         <option value="$PROJECT_DIR$/node/index.js" />
         <option value="$PROJECT_DIR$/node/index.txt" />
         <option value="$PROJECT_DIR$/java/src/main/react/package.json" />
-        <option value="$PROJECT_DIR$/java/src/main/react/src/constants.js" />
-        <option value="$PROJECT_DIR$/java/src/main/react/src/App.js" />
         <option value="$PROJECT_DIR$/blockchain-api/iroha-example.js" />
         <option value="$PROJECT_DIR$/blockchain-api/index.js" />
         <option value="$PROJECT_DIR$/blockchain-api/irohaExample.js" />
@@ -333,7 +331,16 @@
         <option value="$PROJECT_DIR$/docker/iroha-cli/Dockerfile" />
         <option value="$PROJECT_DIR$/docker/iroha-ca/iroha-ca.sh" />
         <option value="$PROJECT_DIR$/docker/iroha-cli/irosh.sh" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/java/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/service/Teste.java" />
+        <option value="$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/config/sadf.java" />
+        <option value="$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/config/WebServiceConfig.java" />
+        <option value="$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/Teste.java" />
+        <option value="$PROJECT_DIR$/java/src/main/react/src/constants.js" />
+        <option value="$PROJECT_DIR$/java/src/main/react/src/App.js" />
+        <option value="$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/service/TesteService.java" />
       </list>
     </option>
   </component>
@@ -777,10 +784,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="192" />
+    <option name="x" value="191" />
     <option name="y" value="115" />
-    <option name="width" value="1154" />
-    <option name="height" value="629" />
+    <option name="width" value="1155" />
+    <option name="height" value="630" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -813,6 +820,16 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="docker" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="finaudit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="docker" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="iroha-cli-teste" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="finaudit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="finaudit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -844,6 +861,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\w\finaudit\docker\iroha-cli-teste" />
       <recent name="$PROJECT_DIR$/node" />
       <recent name="C:\w\finaudit\java\src\main\proto" />
       <recent name="C:\w\finaudit\docker\irohad" />
@@ -861,7 +879,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.index.js">
+  <component name="RunManager" selected="Spring Boot.ReactBootApp">
     <configuration name="Run Maven" type="MavenRunConfiguration" factoryName="Maven" singleton="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -1010,7 +1028,28 @@
       <option name="project" value="LOCAL" />
       <updated>1537282057163</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="iroha-ca">
+      <created>1537282481455</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1537282481455</updated>
+    </task>
+    <task id="LOCAL-00012" summary="iroha-cli">
+      <created>1537282503705</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1537282503705</updated>
+    </task>
+    <task id="LOCAL-00013" summary="exposing SOAP">
+      <created>1537283371537</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1537283371537</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -1031,13 +1070,13 @@
       <window_info id="Designer" order="1" />
       <window_info id="npm" order="2" sideWeight="0.42222223" side_tool="true" weight="0.13691275" />
       <window_info id="UI Designer" order="3" />
-      <window_info active="true" id="Structure" order="4" sideWeight="0.41958043" side_tool="true" visible="true" weight="0.13691275" />
+      <window_info id="Structure" order="4" sideWeight="0.42509362" side_tool="true" visible="true" weight="0.13892618" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5804196" visible="true" weight="0.13691275" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.57490635" visible="true" weight="0.13892618" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="0" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4966443" weight="0.74825174" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.50201344" side_tool="true" visible="true" weight="0.5980254" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4966443" weight="0.35244754" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.5026846" side_tool="true" weight="0.5972028" />
       <window_info anchor="bottom" id="Docker" order="4" sideWeight="0.50067115" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5013423" side_tool="true" weight="0.33850494" />
       <window_info anchor="bottom" id="Messages" order="6" weight="0.32867134" />
@@ -1047,7 +1086,7 @@
       <window_info anchor="bottom" id="Find" order="10" sideWeight="0.49932885" weight="0.32863188" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.49798658" visible="true" weight="0.5980254" />
+      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.49731544" visible="true" weight="0.25314686" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.18741259" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.5902098" />
       <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.4986577" weight="0.32867134" />
@@ -1143,7 +1182,8 @@
     <MESSAGE value="nova abordagem" />
     <MESSAGE value="iroha-ca" />
     <MESSAGE value="iroha-cli" />
-    <option name="LAST_COMMIT_MESSAGE" value="iroha-cli" />
+    <MESSAGE value="exposing SOAP" />
+    <option name="LAST_COMMIT_MESSAGE" value="exposing SOAP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1180,12 +1220,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/ordering_service_state" />
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/peer" />
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/role" />
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/role_has_permissions" />
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/signatory" />
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/role/postgres" />
     <entry file="file://$PROJECT_DIR$/docker/iroha-local/test@test.priv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1210,9 +1244,6 @@
     <entry file="file://$PROJECT_DIR$/java/src/main/proto/proposal.proto">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/proto/block.proto">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/proto/qry_responses.proto">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1228,42 +1259,15 @@
     <entry file="file://$PROJECT_DIR$/java/src/main/proto/commands.proto">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/service/Teste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/Teste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/finaudit.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/react/node_modules/iroha-lib/index.js" />
-    <entry file="file://$PROJECT_DIR$/java/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2730">
-          <caret line="188" column="20" selection-start-line="122" selection-start-column="19" selection-end-line="188" selection-end-column="20" />
-          <folding>
-            <element signature="n#extensions#0;n#build#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/react/node_modules/grpc/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/node/package.json" />
     <entry file="file://$PROJECT_DIR$/node/index.txt" />
     <entry file="file://$PROJECT_DIR$/node/index.js" />
     <entry file="file://$PROJECT_DIR$/java/src/main/react/src/registerServiceWorker.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/react/package.json">
@@ -1273,24 +1277,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blockchain-api/index.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1365,15 +1355,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/Teste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" lean-forward="true" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/target/generated-sources/protobuf/grpc-java/iroha/protocol/QueryServiceGrpc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/config/WebServiceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="method#servletRegistrationBean#0;class#WebServiceConfig#0" />
+            <element signature="method#springBus#0;class#WebServiceConfig#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/proto/block.proto">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="510">
-            <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <first_editor relative-caret-position="153">
+            <caret line="34" column="65" lean-forward="true" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/service/TesteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/iroha-cli-teste/admin@test.pub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/iroha-cli-teste/README.mmd">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

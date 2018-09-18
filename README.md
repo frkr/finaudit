@@ -69,3 +69,6 @@ mvn spring-boot:run
 
 ##### REST API
 - [http://localhost/swagger-ui.html](http://localhost/swagger-ui.html)
+
+##### SOAP API
+- [http://localhost/ws/](http://localhost/ws/)

@@ -23,22 +23,6 @@
     </properties>
 
     <dependencies>
-        <!-- GRPC -->
-        <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-netty</artifactId>
-            <version>1.8.0</version>
-        </dependency>
-        <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-protobuf</artifactId>
-            <version>1.8.0</version>
-        </dependency>
-        <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-stub</artifactId>
-            <version>1.8.0</version>
-        </dependency>
         <!-- Srping WEB -->
         <!-- XXX se colocar spring security esta dependencia não é necessária -->
         <dependency>
@@ -71,17 +55,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <!-- WebService -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-spring-boot-starter-jaxws</artifactId>
+            <version>3.2.5</version>
+        </dependency>
+        <!-- FIXME WebService Desenvolvimento -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-features-logging</artifactId>
+            <version>3.2.5</version>
+        </dependency>
     </dependencies>
 
     <build>
-        <!-- GRPC -->
-        <extensions>
-            <extension>
-                <groupId>kr.motd.maven</groupId>
-                <artifactId>os-maven-plugin</artifactId>
-                <version>1.5.0.Final</version>
-            </extension>
-        </extensions>
         <!-- mapping resources -->
         <resources>
             <resource>
@@ -95,25 +83,6 @@
             </resource>
         </resources>
         <plugins>
-            <!-- GRPC -->
-            <plugin>
-                <groupId>org.xolstice.maven.plugins</groupId>
-                <artifactId>protobuf-maven-plugin</artifactId>
-                <version>0.5.0</version>
-                <configuration>
-                    <protocArtifact>com.google.protobuf:protoc:3.4.0:exe:${os.detected.classifier}</protocArtifact>
-                    <pluginId>grpc-java</pluginId>
-                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.7.0:exe:${os.detected.classifier}</pluginArtifact>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compile</goal>
-                            <goal>compile-custom</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
             <!-- constroe um grande jar -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -121,72 +90,95 @@
             </plugin>
             <!-- REACT -->
             <plugin>
-            <groupId>com.github.eirslett</groupId>
-            <artifactId>frontend-maven-plugin</artifactId>
-            <version>1.6</version>
-            <configuration>
-            <installDirectory>${basedir}</installDirectory>
-            <nodeVersion>v10.10.0</nodeVersion>
-            <npmVersion>6.4.1</npmVersion>
-            </configuration>
-            <executions>
-            <execution>
-            <phase>validate</phase>
-            <id>install node and npm</id>
-            <goals>
-            <goal>install-node-and-npm</goal>
-            </goals>
-            <configuration>
-            <installDirectory>${basedir}</installDirectory>
-            </configuration>
-            </execution>
-            <execution>
-            <phase>initialize</phase>
-            <id>npm install</id>
-            <goals>
-            <goal>npm</goal>
-            </goals>
-            <configuration>
-            <installDirectory>${basedir}</installDirectory>
-            <workingDirectory>src/main/react</workingDirectory>
-            <arguments>install</arguments>
-            </configuration>
-            </execution>
-            <execution>
-            <phase>generate-resources</phase>
-            <id>npm build</id>
-            <goals>
-            <goal>npm</goal>
-            </goals>
-            <configuration>
-            <installDirectory>${basedir}</installDirectory>
-            <workingDirectory>src/main/react</workingDirectory>
-            <arguments>run build</arguments>
-            </configuration>
-            </execution>
-            </executions>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>1.6</version>
+                <configuration>
+                    <installDirectory>${basedir}</installDirectory>
+                    <nodeVersion>v10.10.0</nodeVersion>
+                    <npmVersion>6.4.1</npmVersion>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <id>install node and npm</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                        <configuration>
+                            <installDirectory>${basedir}</installDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <phase>initialize</phase>
+                        <id>npm install</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <installDirectory>${basedir}</installDirectory>
+                            <workingDirectory>src/main/react</workingDirectory>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <id>npm build</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <installDirectory>${basedir}</installDirectory>
+                            <workingDirectory>src/main/react</workingDirectory>
+                            <arguments>run build</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
-            <artifactId>maven-resources-plugin</artifactId>
-            <executions>
-            <execution>
-            <phase>process-resources</phase>
-            <id>react-copy</id>
-            <goals>
-            <goal>copy-resources</goal>
-            </goals>
-            <configuration>
-            <outputDirectory>${basedir}/target/classes/static/</outputDirectory>
-            <resources>
-            <resource>
-            <directory>src/main/react/build</directory>
-            <filtering>false</filtering>
-            </resource>
-            </resources>
-            </configuration>
-            </execution>
-            </executions>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>process-resources</phase>
+                        <id>react-copy</id>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}/target/classes/static/</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/react/build</directory>
+                                    <filtering>false</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
+            <!-- Usado apesar para importacao de WSDL da certisign -->
+            <!--<plugin>-->
+            <!--<groupId>org.apache.cxf</groupId>-->
+            <!--<artifactId>cxf-codegen-plugin</artifactId>-->
+            <!--<version>3.2.5</version>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<id>generate-sources</id>-->
+            <!--<phase>generate-sources</phase>-->
+            <!--<configuration>-->
+            <!--<sourceRoot>${project.build.directory}/generated/cxf</sourceRoot>-->
+            <!--<wsdlOptions>-->
+            <!--<wsdlOption>-->
+            <!--<wsdl>${basedir}/src/main/resources/wsdl/MainBean.wsdl</wsdl>-->
+            <!--</wsdlOption>-->
+            <!--</wsdlOptions>-->
+            <!--</configuration>-->
+            <!--<goals>-->
+            <!--<goal>wsdl2java</goal>-->
+            <!--</goals>-->
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 
