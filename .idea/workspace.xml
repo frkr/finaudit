@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f8a0eae-43b9-491e-8b7d-c76bc0e63ec9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blockchain-api/irohaExample.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/finaudit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/finaudit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/react/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/react/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/react/src/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/iroha-ca/iroha-ca.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/iroha-ca/iroha-ca.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/java/target/" />
@@ -84,22 +81,24 @@
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="17" />
+          <entry key="Dockerfile" value="19" />
           <entry key="account" value="5" />
           <entry key="account_has_asset" value="3" />
           <entry key="account_has_grantable_permissions" value="2" />
           <entry key="account_has_roles" value="2" />
           <entry key="account_has_signatory" value="2" />
           <entry key="asset" value="5" />
-          <entry key="bat" value="13" />
+          <entry key="bat" value="15" />
           <entry key="css" value="1" />
           <entry key="docker" value="1" />
           <entry key="domain" value="2" />
@@ -114,7 +113,7 @@
           <entry key="java" value="34" />
           <entry key="js" value="25" />
           <entry key="json" value="13" />
-          <entry key="md" value="10" />
+          <entry key="md" value="12" />
           <entry key="meta" value="1" />
           <entry key="ordering_service_state" value="2" />
           <entry key="peer" value="3" />
@@ -125,7 +124,7 @@
           <entry key="pub" value="4" />
           <entry key="role" value="2" />
           <entry key="role_has_permissions" value="2" />
-          <entry key="sh" value="13" />
+          <entry key="sh" value="19" />
           <entry key="signatory" value="3" />
           <entry key="svg" value="1" />
           <entry key="ts" value="1" />
@@ -135,18 +134,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="13" />
+          <entry key="Bash" value="19" />
           <entry key="CSS" value="1" />
           <entry key="Database Element" value="41" />
-          <entry key="Dockerfile" value="17" />
+          <entry key="Dockerfile" value="19" />
           <entry key="HTML" value="1" />
           <entry key="HTTP Request" value="2" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="34" />
           <entry key="JSON" value="13" />
           <entry key="JavaScript" value="25" />
-          <entry key="Markdown" value="10" />
-          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="Markdown" value="12" />
+          <entry key="PLAIN_TEXT" value="28" />
           <entry key="PROTO" value="9" />
           <entry key="Properties" value="2" />
           <entry key="SQL" value="1" />
@@ -157,32 +156,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Dockerfile" value="152" />
-          <entry key="bat" value="36" />
+          <entry key="Dockerfile" value="155" />
+          <entry key="bat" value="43" />
           <entry key="docker" value="1" />
           <entry key="html" value="46" />
           <entry key="http" value="58" />
           <entry key="java" value="727" />
           <entry key="js" value="212" />
           <entry key="json" value="9" />
-          <entry key="md" value="1593" />
+          <entry key="md" value="1633" />
           <entry key="properties" value="2" />
-          <entry key="sh" value="642" />
-          <entry key="txt" value="127" />
+          <entry key="sh" value="865" />
+          <entry key="txt" value="162" />
           <entry key="xml" value="344" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="680" />
-          <entry key="Dockerfile" value="152" />
+          <entry key="Bash" value="905" />
+          <entry key="Dockerfile" value="155" />
           <entry key="HTML" value="46" />
           <entry key="HTTP Request" value="58" />
           <entry key="JAVA" value="727" />
           <entry key="JSON" value="9" />
           <entry key="JavaScript" value="212" />
-          <entry key="Markdown" value="1555" />
-          <entry key="PLAIN_TEXT" value="164" />
+          <entry key="Markdown" value="1593" />
+          <entry key="PLAIN_TEXT" value="206" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="344" />
         </counts>
@@ -242,12 +241,15 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blockchain-api/irohaExample.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="510">
+                <caret line="30" selection-start-line="30" selection-end-line="30" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -270,6 +272,7 @@
       <find>responses_pb</find>
       <find>blob2array</find>
       <find>iroha.blob2array</find>
+      <find>iroha-ca</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -305,7 +308,6 @@
         <option value="$PROJECT_DIR$/docker/iroha-ca/aws.sh" />
         <option value="$PROJECT_DIR$/docker/irohad/push.bat" />
         <option value="$PROJECT_DIR$/docker/iroha-ca/Dockerfile" />
-        <option value="$PROJECT_DIR$/docker/iroha-ca/iroha-ca.sh" />
         <option value="$PROJECT_DIR$/docker/irohad/build.bat" />
         <option value="$PROJECT_DIR$/docker/irohad/config.docker" />
         <option value="$PROJECT_DIR$/docker/irohad/genisis.json" />
@@ -314,7 +316,6 @@
         <option value="$PROJECT_DIR$/docker/iroha-local/Dockerfile" />
         <option value="$PROJECT_DIR$/docker/iroha-local/testes.http" />
         <option value="$PROJECT_DIR$/java/src/main/proto/GreetingService.proto" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/Teste.java" />
         <option value="$PROJECT_DIR$/java/pom.xml" />
         <option value="$PROJECT_DIR$/node/package.json" />
@@ -327,6 +328,12 @@
         <option value="$PROJECT_DIR$/blockchain-api/index.js" />
         <option value="$PROJECT_DIR$/blockchain-api/irohaExample.js" />
         <option value="$PROJECT_DIR$/blockchain-api/package.json" />
+        <option value="$PROJECT_DIR$/docker/iroha-cli/push.bat" />
+        <option value="$PROJECT_DIR$/docker/iroha-cli/build.bat" />
+        <option value="$PROJECT_DIR$/docker/iroha-cli/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker/iroha-ca/iroha-ca.sh" />
+        <option value="$PROJECT_DIR$/docker/iroha-cli/irosh.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -770,10 +777,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="194" />
+    <option name="x" value="192" />
     <option name="y" value="115" />
-    <option name="width" value="1152" />
-    <option name="height" value="627" />
+    <option name="width" value="1154" />
+    <option name="height" value="629" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -793,6 +800,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -803,13 +811,12 @@
             <path>
               <item name="finaudit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="blockchain-api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="docker" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -989,7 +996,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537162960661</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="iroha-ca">
+      <created>1537278802653</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1537278802653</updated>
+    </task>
+    <task id="LOCAL-00010" summary="iroha-cli">
+      <created>1537282057163</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1537282057163</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -1003,18 +1024,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1536" height="839" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
       <window_info id="Designer" order="1" />
-      <window_info id="npm" order="2" sideWeight="0.41403508" side_tool="true" visible="true" weight="0.13691275" />
+      <window_info id="npm" order="2" sideWeight="0.42222223" side_tool="true" weight="0.13691275" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Structure" order="4" sideWeight="0.40620592" side_tool="true" weight="0.17986578" />
+      <window_info active="true" id="Structure" order="4" sideWeight="0.41958043" side_tool="true" visible="true" weight="0.13691275" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5859649" visible="true" weight="0.13691275" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5804196" visible="true" weight="0.13691275" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="0" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4966443" weight="0.33850494" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4966443" weight="0.74825174" />
       <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.50201344" side_tool="true" visible="true" weight="0.5980254" />
       <window_info anchor="bottom" id="Docker" order="4" sideWeight="0.50067115" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5013423" side_tool="true" weight="0.33850494" />
@@ -1027,10 +1049,10 @@
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.49798658" visible="true" weight="0.5980254" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.18741259" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.5907173" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.5902098" />
       <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.4986577" weight="0.32867134" />
       <window_info anchor="bottom" id="TypeScript" order="17" weight="0.32863188" />
-      <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.49506348" visible="true" weight="0.08389262" />
+      <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.49506348" weight="0.08389262" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" id="Bean Validation" order="2" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="3" />
@@ -1042,35 +1064,37 @@
     <layout-to-restore>
       <window_info id="Web" order="0" side_tool="true" />
       <window_info id="Designer" order="1" />
-      <window_info id="npm" order="2" sideWeight="0.5006993" side_tool="true" weight="0.20402685" />
+      <window_info id="npm" order="2" sideWeight="0.42222223" side_tool="true" visible="true" weight="0.13691275" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Structure" order="4" sideWeight="0.3902098" side_tool="true" visible="true" weight="0.16845638" />
+      <window_info id="Structure" order="4" sideWeight="0.40620592" side_tool="true" weight="0.17986578" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.6097902" visible="true" weight="0.16845638" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5745856" visible="true" weight="0.13691275" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="0" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4986577" weight="0.33986014" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.5013423" side_tool="true" weight="0.42937064" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.4966443" visible="true" weight="0.74825174" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.50201344" side_tool="true" visible="true" weight="0.5980254" />
       <window_info anchor="bottom" id="Docker" order="4" sideWeight="0.50067115" side_tool="true" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5013423" side_tool="true" weight="0.33986014" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5013423" side_tool="true" weight="0.33850494" />
       <window_info anchor="bottom" id="Messages" order="6" weight="0.32867134" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Message" order="9" />
-      <window_info anchor="bottom" id="Find" order="10" />
+      <window_info anchor="bottom" id="Find" order="10" sideWeight="0.49932885" weight="0.32863188" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.4986577" weight="0.42937064" />
+      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.49798658" visible="true" weight="0.5980254" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.18741259" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32867134" />
-      <window_info anchor="right" id="Maven Projects" order="0" weight="0.1147651" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.5902098" />
+      <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.4986577" weight="0.32867134" />
+      <window_info anchor="bottom" id="TypeScript" order="17" weight="0.32863188" />
+      <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.49506348" visible="true" weight="0.08389262" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" id="Bean Validation" order="2" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info anchor="right" id="Database" order="7" side_tool="true" weight="0.24026845" />
+      <window_info anchor="right" id="Database" order="7" sideWeight="0.5049365" side_tool="true" weight="0.1147651" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1117,7 +1141,9 @@
     <MESSAGE value="iroha certificates" />
     <MESSAGE value="irohad node zero" />
     <MESSAGE value="nova abordagem" />
-    <option name="LAST_COMMIT_MESSAGE" value="nova abordagem" />
+    <MESSAGE value="iroha-ca" />
+    <MESSAGE value="iroha-cli" />
+    <option name="LAST_COMMIT_MESSAGE" value="iroha-cli" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1125,7 +1151,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/blockchain-api/irohaExample.js</url>
           <line>39</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -1155,12 +1180,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/account_has_signatory" />
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/domain" />
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/height_by_account_set" />
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/height_by_hash" />
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/index_by_creator_height" />
-    <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/index_by_id_height_asset" />
     <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/ordering_service_state" />
     <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/peer" />
     <entry file="das://7a61f3f0-d8c8-4fe4-929b-59d264889f7e/database/postgres/schema/public/table/role" />
@@ -1216,16 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/Teste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1236,9 +1245,7 @@
     <entry file="file://$PROJECT_DIR$/java/finaudit.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/react/node_modules/iroha-lib/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/react/node_modules/iroha-lib/index.js" />
     <entry file="file://$PROJECT_DIR$/java/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2730">
@@ -1249,30 +1256,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/react/node_modules/grpc/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/index.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/react/node_modules/grpc/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node/package.json" />
+    <entry file="file://$PROJECT_DIR$/node/index.txt" />
+    <entry file="file://$PROJECT_DIR$/node/index.js" />
     <entry file="file://$PROJECT_DIR$/java/src/main/react/src/registerServiceWorker.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1339,6 +1326,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/iroha-cli/iroha-ca.sh" />
+    <entry file="file://$PROJECT_DIR$/docker/iroha-ca/iroha-ca.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="81" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/iroha-cli/push.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/iroha-cli/build.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/iroha-cli/irosh.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="158" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/iroha-cli/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="510">
+            <caret line="30" selection-start-line="30" selection-end-line="30" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
