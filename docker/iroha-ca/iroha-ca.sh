@@ -1,4 +1,4 @@
-if [ -z "$1" ] || [ -z "$2" ]
+if [ -z "$1" ]
 then
     echo ""
     echo "#############"
@@ -13,11 +13,13 @@ else
     echo "PRIV ############# PRIV ############# PRIV"
     cat $1.priv
     echo ""
+    echo "" > $1.priv
     rm $1.priv
     echo "PRIV ############# PRIV ############# PRIV"
     echo "PUB ############# PUB ############# PUB"
     cat $1.pub
     echo ""
+    echo "" > $1.pub
     rm $1.pub
     echo "PUB ############# PUB ############# PUB"
 fi
