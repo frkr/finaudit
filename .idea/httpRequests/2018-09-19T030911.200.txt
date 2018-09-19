@@ -1,0 +1,3 @@
+[2018-09-19 18:09:11.031444831][th:6][info] TransactionResponseHandler Transaction successfully sent
+Congratulation, your transaction was accepted for processing.
+Its hash is fdd85f506a57000471c159dabe5deba4338b1bc5f83c90c77fb875bef963f7a7

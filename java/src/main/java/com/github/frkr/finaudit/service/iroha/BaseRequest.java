@@ -1,6 +1,6 @@
 package com.github.frkr.finaudit.service.iroha;
 
-public abstract class BaseRequest {
+public class BaseRequest {
 
     private String accn;
     private String accnPriv;

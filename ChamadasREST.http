@@ -1,0 +1,80 @@
+### Swaager API
+GET http://localhost/v2/api-docs
+
+### Query
+#  1. Get all permissions related to role (get_role_perm)
+#  2x Get Transactions by transactions' hashes (get_tx)
+#  3. Get information about asset (get_ast_info)
+#  4. Get Account's Transactions (get_acc_tx)
+#  5. Get Account's Asset Transactions (get_acc_ast_tx)
+#  6. Get all current roles in the system (get_roles)
+#  7. Get Account's Signatories (get_acc_sign)
+#  8. Get Account's Assets (get_acc_ast)
+#  9. Get Account Information (get_acc)
+
+POST http://localhost/rs/query
+Content-Type: application/json;charset=UTF-8
+
+{
+  "accn": "admin@test",
+  "accnPass": "",
+  "accnPriv": "f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70",
+  "accnPub": "313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910",
+  "query": "get_roles",
+  "asset": "coin#test",
+  "role": "admin",
+  "server": "irohad-zero",
+  "torii": "50051"
+}
+
+### Status
+POST http://localhost/rs/status
+Content-Type: application/json;charset=UTF-8
+
+{
+  "accn": "admin@test",
+  "accnPass": "",
+  "accnPriv": "f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70",
+  "accnPub": "313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910",
+  "hash": "fdd85f506a57000471c159dabe5deba4338b1bc5f83c90c77fb875bef963f7a7",
+  "status": "get_tx_info",
+  "server": "irohad-zero",
+  "torii": "50051"
+}
+
+### Transaction
+#  1x Detach role from account (detach)
+#  2x Add new role to account (apnd_role)
+#  3x Create new role (crt_role)
+#  4x Set account key/value detail (set_acc_kv)
+#  5. Transfer Assets (tran_ast)
+#  6x Grant permission over your account (grant_perm)
+#  7x Subtract Assets Quantity from Account (sub_ast_qty)
+#  8x Set Account Quorum (set_qrm)
+#  9x Remove Signatory (rem_sign)
+#  10x Create Domain (crt_dmn)
+#  11x Revoke permission from account (revoke_perm)
+#  12x Create Account (crt_acc)
+#  13x Add Signatory to Account (add_sign)
+#  14. Create Asset (crt_ast)
+#  15x Add Peer to Iroha Network (add_peer)
+#  16. Add Asset Quantity (add_ast_qty)
+
+POST http://localhost/rs/trx
+Content-Type: application/json;charset=UTF-8
+
+{
+  "accn": "admin@test",
+  "accnPass": "",
+  "accnPriv": "f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70",
+  "accnPub": "313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910",
+  "amount": "100.0",
+  "asset": "coin#test",
+  "destination": "test@test",
+  "precision": "2",
+  "transaction": "add_ast_qty",
+  "server": "irohad-zero",
+  "torii": "50051"
+}
+
+###

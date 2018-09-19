@@ -1,0 +1,36 @@
+Account: admin@test
+PIPE: 2\nget_acc\nadmin@test\n1\nirohad-zero\n50051\n
+Welcome to Iroha-Cli. 
+Choose what to do:
+1. New transaction (tx)
+2. New query (qry)
+3. New transaction status request (st)
+> : Choose query: 
+1. Get all permissions related to role (get_role_perm)
+2. Get Transactions by transactions' hashes (get_tx)
+3. Get information about asset (get_ast_info)
+4. Get Account's Transactions (get_acc_tx)
+5. Get Account's Asset Transactions (get_acc_ast_tx)
+6. Get all current roles in the system (get_roles)
+7. Get Account's Signatories (get_acc_sign)
+8. Get Account's Assets (get_acc_ast)
+9. Get Account Information (get_acc)
+0. Back (b)
+> : Requested account Id: Query is formed. Choose what to do:
+1. Send to Iroha peer (send)
+2. Save as json file (save)
+0. Back (b)
+> : Peer address (0.0.0.0): Peer port (50051): [2018-09-19 01:58:39.812919519][th:6][info] QueryResponseHandler [Account]:
+[2018-09-19 01:58:39.813197474][th:6][info] QueryResponseHandler -Account Id:- admin@test
+[2018-09-19 01:58:39.813499786][th:6][info] QueryResponseHandler -Domain- test
+[2018-09-19 01:58:39.813808607][th:6][info] QueryResponseHandler -Roles-: 
+[2018-09-19 01:58:39.814127780][th:6][info] QueryResponseHandler  admin 
+[2018-09-19 01:58:39.814443496][th:6][info] QueryResponseHandler  money_creator 
+[2018-09-19 01:58:39.814663752][th:6][info] QueryResponseHandler  user 
+[2018-09-19 01:58:39.814916409][th:6][info] QueryResponseHandler -Data-: {}
+--------------------
+Choose what to do:
+1. New transaction (tx)
+2. New query (qry)
+3. New transaction status request (st)
+> : -END-

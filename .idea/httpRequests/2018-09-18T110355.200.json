@@ -1,0 +1,149 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Iroha REST",
+    "version": "beta",
+    "title": "finaudit",
+    "termsOfService": "https://github.com/frkr/finaudit",
+    "contact": {
+      "name": "Davi Saranszky Mesquita",
+      "url": "https://github.com/frkr/finaudit",
+      "email": "davimesquita@gmail.com"
+    },
+    "license": {
+      "name": "IDK",
+      "url": "https://github.com/frkr/finaudit"
+    }
+  },
+  "host": "localhost",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "iroha-service",
+      "description": "Interface direta com o servidor"
+    },
+    {
+      "name": "teste-service",
+      "description": "somente para testes"
+    }
+  ],
+  "paths": {
+    "/rs/query": {
+      "post": {
+        "tags": [
+          "iroha-service"
+        ],
+        "summary": "query",
+        "operationId": "queryUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "queryRequest",
+            "description": "queryRequest",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/QueryRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/rs/teste": {
+      "get": {
+        "tags": [
+          "teste-service"
+        ],
+        "summary": "retorna uma string hardcoded",
+        "operationId": "testeUsingGET",
+        "produces": [
+          "text/plain"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "definitions": {
+    "QueryRequest": {
+      "type": "object",
+      "properties": {
+        "accn": {
+          "type": "string"
+        },
+        "accnPass": {
+          "type": "string"
+        },
+        "accnPriv": {
+          "type": "string"
+        },
+        "accnPub": {
+          "type": "string"
+        },
+        "qry": {
+          "type": "string",
+          "enum": [
+            "get_role_perm",
+            "get_tx",
+            "get_ast_info",
+            "get_acc_tx",
+            "get_acc_ast_tx",
+            "get_roles",
+            "get_acc_sign",
+            "get_acc_ast",
+            "get_acc"
+          ]
+        },
+        "server": {
+          "type": "string"
+        },
+        "torii": {
+          "type": "string"
+        }
+      },
+      "title": "QueryRequest"
+    }
+  }
+}

@@ -1,6 +1,8 @@
 # Docs
 - https://iroha.readthedocs.io/en/latest/getting_started/index.html
 - https://hyperledger.github.io/iroha-api/?protobuf#add-asset-quantity
+- https://github.com/frkr/finaudit
+- https://github.com/frkr/finaudit/tree/master/docker/iroha-local
 
 ### Iroha
 #### Network
@@ -61,6 +63,8 @@ docker logs -f irohad-zero
 ##### Irohad node ZERO
 - ((TODO)) Adicionar mais nós usando o Iroha publico.
 
+--------------
+
 # Run Interface
 ```bash
 mvn spring-boot:run
@@ -70,6 +74,27 @@ mvn spring-boot:run
 ##### REST API
 - Json Swagger [http://localhost/v2/api-docs](http://localhost/v2/api-docs)
 - UI [http://localhost/swagger-ui.html](http://localhost/swagger-ui.html)
+- Swagger Editor [https://editor.swagger.io/](https://editor.swagger.io/)
 
 ##### SOAP API
 - [http://localhost/ws/](http://localhost/ws/)
+
+--------------
+
+# Tests
+
+## PIPED Test
+```bash
+docker run --rm --network=iroha-network frkr/iroha-ex admin@test f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70 313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910 \
+2\\n9\\nadmin@test\\n1\\nirohad-zero\\n50051\\n
+```
+
+## Native
+```bash
+docker run -it --rm --network=iroha-network --entrypoint=/bin/bash hyperledger/iroha
+echo f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70 > admin@test.priv
+echo 313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910 > admin@test.pub
+
+iroha-cli -account_name admin@test --key_path ./ 
+```
+

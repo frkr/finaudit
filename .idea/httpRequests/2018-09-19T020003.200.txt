@@ -1,0 +1,12 @@
+[2018-09-19 05:00:05.383818301][th:6][info] QueryResponseHandler [Transaction]
+[2018-09-19 05:00:05.384410112][th:6][info] QueryResponseHandler -Hash- 16e2d9d14b243f5e60e7de6c2e5403a203b7eb0a67111121454c45c2463e2cb6
+[2018-09-19 05:00:05.384652983][th:6][info] QueryResponseHandler -Creator Id- admin@test
+[2018-09-19 05:00:05.384797324][th:6][info] QueryResponseHandler -Created Time- 1537332474285
+[2018-09-19 05:00:05.385005757][th:6][info] QueryResponseHandler -Commands- 1
+[2018-09-19 05:00:05.385457674][th:6][info] QueryResponseHandler  CreateAsset: [asset_name=estaleca, domain_id=test, precision=2, ] 
+[2018-09-19 05:00:05.385614028][th:6][info] QueryResponseHandler [Transaction]
+[2018-09-19 05:00:05.385831117][th:6][info] QueryResponseHandler -Hash- b31062e4def64f744b05efcde4adf29bf69d153aebdf1c9ba0ca06e1806e53c4
+[2018-09-19 05:00:05.385932883][th:6][info] QueryResponseHandler -Creator Id- admin@test
+[2018-09-19 05:00:05.386231564][th:6][info] QueryResponseHandler -Created Time- 1537332829264
+[2018-09-19 05:00:05.386447359][th:6][info] QueryResponseHandler -Commands- 1
+[2018-09-19 05:00:05.386973707][th:6][info] QueryResponseHandler  AddAssetQuantity: [asset_id=estaleca#test, amount=Amount: [value=100.00, ], ] 
