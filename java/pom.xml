@@ -70,18 +70,6 @@
     </dependencies>
 
     <build>
-        <!-- mapping resources -->
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <excludes>
-                    <exclude>${basedir}/target</exclude>
-                    <exclude>${basedir}/node</exclude>
-                    <exclude>src/main/react/build</exclude>
-                    <exclude>src/main/react/node_modules</exclude>
-                </excludes>
-            </resource>
-        </resources>
         <plugins>
             <!-- constroe um grande jar -->
             <plugin>

@@ -2,11 +2,13 @@ package com.github.frkr.finaudit;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+// XXX (versionamento de banco) @EnableJpaRepositories(repositoryFactoryBeanClass = EnversRevisionRepositoryFactoryBean.class)
 
 @SpringBootApplication
-// XXX (versionamento de banco) @EnableJpaRepositories(repositoryFactoryBeanClass = EnversRevisionRepositoryFactoryBean.class)
-public class ReactBootApp {
-    public static void main(String... a) {
-        SpringApplication.run(ReactBootApp.class, a);
+public class FinAuditApp implements WebMvcConfigurer {
+    public static void main(String[] args) {
+        SpringApplication.run(FinAuditApp.class, args);
     }
 }

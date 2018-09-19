@@ -1,6 +1,6 @@
 package com.github.frkr.finaudit.config;
 
-import com.github.frkr.finaudit.service.TesteService;
+import com.github.frkr.finaudit.service.iroha.IrohaService;
 import org.apache.cxf.Bus;
 import org.apache.cxf.bus.spring.SpringBus;
 import org.apache.cxf.ext.logging.LoggingFeature;
@@ -15,7 +15,7 @@ import javax.xml.ws.Endpoint;
 @Configuration
 public class WebServiceConfig {
 
-    @Bean
+    @Bean()
     public ServletRegistrationBean servletRegistrationBean() {
         return new ServletRegistrationBean(new CXFServlet(), "/ws/*");
     }
@@ -28,9 +28,9 @@ public class WebServiceConfig {
 
     @Bean
     public Endpoint SenhaServiceEndpoint() {
-        EndpointImpl endpoint = new EndpointImpl(springBus(), new TesteService());
+        EndpointImpl endpoint = new EndpointImpl(springBus(), new IrohaService());
         endpoint.getFeatures().add(new LoggingFeature()); // FIXME Desenvolvimento
-        endpoint.publish("/TesteService");
+        endpoint.publish("/IrohaService");
         return endpoint;
     }
 

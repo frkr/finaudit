@@ -31,13 +31,13 @@ public class SwaggerConfig {
 
     private ApiInfo getApiInfo() {
         return new ApiInfo( // FIXME
-                "react-boot",
-                "Booting React",
+                "finaudit",
+                "Iroha REST",
                 "beta",
-                "https://github.com/frkr/react-boot",
-                new Contact("Davi Saranszky Mesquita", "https://github.com/frkr/react-boot", "davimesquita@gmail.com"),
+                "https://github.com/frkr/finaudit",
+                new Contact("Davi Saranszky Mesquita", "https://github.com/frkr/finaudit", "davimesquita@gmail.com"),
                 "IDK",
-                "https://github.com/frkr/react-boot",
+                "https://github.com/frkr/finaudit",
                 Collections.emptyList()
         );
     }
