@@ -69,12 +69,10 @@ docker logs -f irohad-zero
 ```bash
 mvn spring-boot:run
 ```
-[http://localhost](http://localhost)
+- [http://localhost](http://localhost)
 
 ##### REST API
-- Json Swagger [http://localhost/v2/api-docs](http://localhost/v2/api-docs)
-- UI [http://localhost/swagger-ui.html](http://localhost/swagger-ui.html)
-- Swagger Editor [https://editor.swagger.io/](https://editor.swagger.io/)
+- [http://localhost/swagger-ui.html](http://localhost/swagger-ui.html)
 
 ##### SOAP API
 - [http://localhost/ws/](http://localhost/ws/)

@@ -1,22 +1,22 @@
 {
-  "payload":{
-    "transactions":[
+  "payload": {
+    "transactions": [
       {
-        "payload":{
-          "reducedPayload":{
-            "commands":[
+        "payload": {
+          "reducedPayload": {
+            "commands": [
               {
-                "addPeer":{
-                  "peer":{
-                    "address":"0.0.0.0:10001",
-                    "peerKey":"vd1YQE0TFeDrJ5AsXXyOsGAsFiOPAFdz30BrwZEwiSk="
+                "addPeer": {
+                  "peer": {
+                    "address": "0.0.0.0:10001",
+                    "peerKey": "vd1YQE0TFeDrJ5AsXXyOsGAsFiOPAFdz30BrwZEwiSk="
                   }
                 }
               },
               {
-                "createRole":{
-                  "roleName":"admin",
-                  "permissions":[
+                "createRole": {
+                  "roleName": "admin",
+                  "permissions": [
                     "can_add_peer",
                     "can_add_signatory",
                     "can_create_account",
@@ -37,9 +37,9 @@
                 }
               },
               {
-                "createRole":{
-                  "roleName":"user",
-                  "permissions":[
+                "createRole": {
+                  "roleName": "user",
+                  "permissions": [
                     "can_add_signatory",
                     "can_get_my_acc_ast",
                     "can_get_my_acc_ast_txs",
@@ -61,9 +61,9 @@
                 }
               },
               {
-                "createRole":{
-                  "roleName":"money_creator",
-                  "permissions":[
+                "createRole": {
+                  "roleName": "money_creator",
+                  "permissions": [
                     "can_add_asset_qty",
                     "can_create_asset",
                     "can_receive",
@@ -72,52 +72,83 @@
                 }
               },
               {
-                "createDomain":{
-                  "domainId":"test",
-                  "defaultRole":"user"
+                "createDomain": {
+                  "domainId": "cliente1",
+                  "defaultRole": "user"
                 }
               },
               {
-                "createAsset":{
-                  "assetName":"coin",
-                  "domainId":"test",
-                  "precision":2
+                "createDomain": {
+                  "domainId": "cliente2",
+                  "defaultRole": "user"
                 }
               },
               {
-                "createAccount":{
-                  "accountName":"admin",
-                  "domainId":"test",
-                  "mainPubkey":"MToH5jhHdu2VRHcQ0V5ZFIRzzPwFKmgTF6cqafKkmRA="
+                "createAsset": {
+                  "assetName": "conta1",
+                  "domainId": "cliente1",
+                  "precision": 2
                 }
               },
               {
-                "createAccount":{
-                  "accountName":"test",
-                  "domainId":"test",
-                  "mainPubkey":"cW/lBfafGFEaGwg5Faqf9z7zbmaIGZ85WXUNs4uPS/w="
+                "createAccount": {
+                  "accountName": "admin",
+                  "domainId": "cliente1",
+                  "mainPubkey": "MToH5jhHdu2VRHcQ0V5ZFIRzzPwFKmgTF6cqafKkmRA="
                 }
               },
               {
-                "appendRole":{
-                  "accountId":"admin@test",
-                  "roleName":"admin"
+                "createAccount": {
+                  "accountName": "admin",
+                  "domainId": "cliente2",
+                  "mainPubkey": "MToH5jhHdu2VRHcQ0V5ZFIRzzPwFKmgTF6cqafKkmRA="
                 }
               },
               {
-                "appendRole":{
-                  "accountId":"admin@test",
-                  "roleName":"money_creator"
+                "createAccount": {
+                  "accountName": "usrfinan",
+                  "domainId": "cliente1",
+                  "mainPubkey": "cW/lBfafGFEaGwg5Faqf9z7zbmaIGZ85WXUNs4uPS/w="
+                }
+              },
+              {
+                "appendRole": {
+                  "accountId": "admin@cliente1",
+                  "roleName": "admin"
+                }
+              },
+              {
+                "appendRole": {
+                  "accountId": "admin@cliente2",
+                  "roleName": "admin"
+                }
+              },
+              {
+                "appendRole": {
+                  "accountId": "admin@cliente1",
+                  "roleName": "money_creator"
+                }
+              },
+              {
+                "appendRole": {
+                  "accountId": "admin@cliente2",
+                  "roleName": "money_creator"
+                }
+              },
+              {
+                "appendRole": {
+                  "accountId": "usrfinan@cliente1",
+                  "roleName": "money_creator"
                 }
               }
             ],
-            "quorum":1
+            "quorum": 1
           }
         }
       }
     ],
-    "txNumber":1,
-    "height":"1",
-    "prevBlockHash":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+    "txNumber": 1,
+    "height": "1",
+    "prevBlockHash": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
   }
 }

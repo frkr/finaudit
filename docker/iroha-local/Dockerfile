@@ -1,12 +1,14 @@
-FROM hyperledger/iroha:latest
+FROM frkr/iroha-ca
 VOLUME /opt/block_store/
 VOLUME /opt/iroha_data/
 COPY node0.priv /opt/iroha_data/
 COPY node0.pub /opt/iroha_data/
-COPY admin@test.priv /opt/iroha_data/
-COPY admin@test.pub /opt/iroha_data/
-COPY test@test.priv /opt/iroha_data/
-COPY test@test.pub /opt/iroha_data/
+COPY admin@conta1.priv /opt/iroha_data/
+COPY admin@conta1.pub /opt/iroha_data/
+COPY admin@conta2.priv /opt/iroha_data/
+COPY admin@conta2.pub /opt/iroha_data/
+COPY usrfinan@conta1.priv /opt/iroha_data/
+COPY usrfinan@conta1.pub /opt/iroha_data/
 COPY config.json /opt/iroha_data/
 COPY genesis.json /opt/iroha_data/
 COPY irohad.sh /opt/iroha_data/
