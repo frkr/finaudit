@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Painel from "./Painel";
-import "./App.css"
-import "purecss/build/pure.css"
 import Cliente from "./Cliente";
+import "purecss/build/pure.css"
+import "./App.css"
 
 class App extends Component {
 
@@ -44,8 +44,8 @@ class App extends Component {
             <div>
                 <div className="custom-menu-wrapper">
                     <div className="pure-menu custom-menu custom-menu-top">
-                        <a href="#" className="pure-menu-heading custom-menu-brand">Blockchain</a>
-                        <a href="#" className="custom-menu-toggle" id="toggle" onClick={this.toggleMenu}><s className="bar"></s><s
+                        <a href="#blockchain" className="pure-menu-heading custom-menu-brand">Blockchain</a>
+                        <a href="#responsive" className="custom-menu-toggle" id="toggle" onClick={this.toggleMenu}><s className="bar"></s><s
                             className="bar"></s></a>
                     </div>
                     <div
@@ -53,8 +53,8 @@ class App extends Component {
                         id="tuckedMenu">
                         <div className="custom-menu-screen"></div>
                         <ul className="pure-menu-list">
-                            <li className="pure-menu-item"><a onClick={() => this.mudar(0)} href="#" className="pure-menu-link">Simulação</a></li>
-                            <li className="pure-menu-item"><a onClick={() => this.mudar(1)} href="#" className="pure-menu-link">Painel</a></li>
+                            <li className="pure-menu-item"><a onClick={() => this.mudar(0)} href="#simulacao" className="pure-menu-link">Simulação</a></li>
+                            <li className="pure-menu-item"><a onClick={() => this.mudar(1)} href="#painel" className="pure-menu-link">Painel</a></li>
                         </ul>
                     </div>
                 </div>

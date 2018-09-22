@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import "purecss/build/pure.css"
 import "./Cliente.css";
 
 class Cliente extends Component {
@@ -40,76 +41,6 @@ class Cliente extends Component {
     render() {
         return (
             <div>
-                <table className="pure-table">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Make</th>
-                        <th>Model</th>
-                        <th>Year</th>
-                    </tr>
-                    </thead>
-
-                    <tbody>
-                    <tr className="pure-table-odd">
-                        <td>1</td>
-                        <td>Honda</td>
-                        <td>Accord</td>
-                        <td>2009</td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td>Toyota</td>
-                        <td>Camry</td>
-                        <td>2012</td>
-                    </tr>
-
-                    <tr className="pure-table-odd">
-                        <td>3</td>
-                        <td>Hyundai</td>
-                        <td>Elantra</td>
-                        <td>2010</td>
-                    </tr>
-
-                    <tr>
-                        <td>4</td>
-                        <td>Ford</td>
-                        <td>Focus</td>
-                        <td>2008</td>
-                    </tr>
-
-                    <tr className="pure-table-odd">
-                        <td>5</td>
-                        <td>Nissan</td>
-                        <td>Sentra</td>
-                        <td>2011</td>
-                    </tr>
-
-                    <tr>
-                        <td>6</td>
-                        <td>BMW</td>
-                        <td>M3</td>
-                        <td>2009</td>
-                    </tr>
-
-                    <tr className="pure-table-odd">
-                        <td>7</td>
-                        <td>Honda</td>
-                        <td>Civic</td>
-                        <td>2010</td>
-                    </tr>
-
-                    <tr>
-                        <td>8</td>
-                        <td>Kia</td>
-                        <td>Soul</td>
-                        <td>2010</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <br/>
-                &nbsp;
                 <form className="pure-form pure-form-aligned">
                     <fieldset>
                         <legend>A Stacked Form <button className="button-small-extra pure-button"
@@ -143,30 +74,79 @@ class Cliente extends Component {
 
                                 <button type="submit" className="pure-button pure-button-primary">Submit</button>
                             </div>
+                            <br/>
+                            &nbsp;
+                            <table className="pure-table">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Make</th>
+                                    <th>Model</th>
+                                    <th>Year</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr className="pure-table-odd">
+                                    <td>1</td>
+                                    <td>Honda</td>
+                                    <td>Accord</td>
+                                    <td>2009</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>Toyota</td>
+                                    <td>Camry</td>
+                                    <td>2012</td>
+                                </tr>
+
+                                <tr className="pure-table-odd">
+                                    <td>3</td>
+                                    <td>Hyundai</td>
+                                    <td>Elantra</td>
+                                    <td>2010</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td>Ford</td>
+                                    <td>Focus</td>
+                                    <td>2008</td>
+                                </tr>
+
+                                <tr className="pure-table-odd">
+                                    <td>5</td>
+                                    <td>Nissan</td>
+                                    <td>Sentra</td>
+                                    <td>2011</td>
+                                </tr>
+
+                                <tr>
+                                    <td>6</td>
+                                    <td>BMW</td>
+                                    <td>M3</td>
+                                    <td>2009</td>
+                                </tr>
+
+                                <tr className="pure-table-odd">
+                                    <td>7</td>
+                                    <td>Honda</td>
+                                    <td>Civic</td>
+                                    <td>2010</td>
+                                </tr>
+
+                                <tr>
+                                    <td>8</td>
+                                    <td>Kia</td>
+                                    <td>Soul</td>
+                                    <td>2010</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </fieldset>
                 </form>
-                <br/>
-                &nbsp;
-                <form className="pure-form">
-                    <legend>A Stacked Form</legend>
-                    <label htmlFor="option-one" className="pure-checkbox">
-                        <input id="option-one" type="checkbox" value=""/>
-                        Here's option one.
-                    </label>
-
-                    <label htmlFor="option-two" className="pure-radio">
-                        <input id="option-two" type="radio" name="optionsRadios" value="option1" checked/>
-                        Here's a radio button. You can choose this one..
-                    </label>
-
-                    <label htmlFor="option-three" className="pure-radio">
-                        <input id="option-three" type="radio" name="optionsRadios" value="option2"/>
-                        ..Or this one!
-                    </label>
-                </form>
-                <br/>
-                &nbsp;
             </div>
         )
     }
