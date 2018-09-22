@@ -11,8 +11,8 @@ class App extends Component {
         this.state = {
             style: {
                 tab: [
-                    "",
-                    "invisible"
+                    ""
+                    , "invisible"
                 ]
             }
         };
@@ -34,18 +34,37 @@ class App extends Component {
         });
     }
 
+    toggleMenu() {
+        document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+        document.getElementById('toggle').classList.toggle('x');
+    }
+
     render() {
         return (
             <div>
-                <div>
-                    <button onClick={() => this.mudar(0)}>Mudar 1</button>
-                    <button onClick={() => this.mudar(1)}>Mudar 2</button>
+                <div className="custom-menu-wrapper">
+                    <div className="pure-menu custom-menu custom-menu-top">
+                        <a href="#" className="pure-menu-heading custom-menu-brand">Blockchain</a>
+                        <a href="#" className="custom-menu-toggle" id="toggle" onClick={this.toggleMenu}><s className="bar"></s><s
+                            className="bar"></s></a>
+                    </div>
+                    <div
+                        className="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked"
+                        id="tuckedMenu">
+                        <div className="custom-menu-screen"></div>
+                        <ul className="pure-menu-list">
+                            <li className="pure-menu-item"><a onClick={() => this.mudar(0)} href="#" className="pure-menu-link">Simulação</a></li>
+                            <li className="pure-menu-item"><a onClick={() => this.mudar(1)} href="#" className="pure-menu-link">Painel</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div className={this.state.style.tab[0]}>
-                    <Cliente/>
-                </div>
-                <div className={this.state.style.tab[1]}>
-                    <Painel/>
+                <div className="main">
+                    <div className={this.state.style.tab[0]}>
+                        <Cliente/>
+                    </div>
+                    <div className={this.state.style.tab[1]}>
+                        <Painel/>
+                    </div>
                 </div>
             </div>
         )

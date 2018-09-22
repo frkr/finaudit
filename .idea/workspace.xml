@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f8a0eae-43b9-491e-8b7d-c76bc0e63ec9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java/src/main/react/src/Cliente.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/react/src/Painel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/react/src/Painel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/react/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/react/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/react/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/react/src/Cliente.css" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/react/src/Cliente.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/react/src/Cliente.js" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/react/src/Cliente.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/java/target/" />
@@ -84,7 +80,7 @@
           <entry key="asset" value="8" />
           <entry key="bat" value="22" />
           <entry key="class" value="1" />
-          <entry key="css" value="6" />
+          <entry key="css" value="13" />
           <entry key="docker" value="1" />
           <entry key="domain" value="3" />
           <entry key="gitignore" value="4" />
@@ -96,8 +92,8 @@
           <entry key="index_by_creator_height" value="2" />
           <entry key="index_by_id_height_asset" value="2" />
           <entry key="java" value="184" />
-          <entry key="js" value="44" />
-          <entry key="json" value="26" />
+          <entry key="js" value="52" />
+          <entry key="json" value="27" />
           <entry key="md" value="35" />
           <entry key="meta" value="1" />
           <entry key="mmd" value="1" />
@@ -123,15 +119,15 @@
         <counts>
           <entry key="Bash" value="29" />
           <entry key="CLASS" value="1" />
-          <entry key="CSS" value="6" />
+          <entry key="CSS" value="13" />
           <entry key="Database Element" value="60" />
           <entry key="Dockerfile" value="23" />
           <entry key="HTML" value="4" />
           <entry key="HTTP Request" value="6" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="184" />
-          <entry key="JSON" value="26" />
-          <entry key="JavaScript" value="44" />
+          <entry key="JSON" value="27" />
+          <entry key="JavaScript" value="52" />
           <entry key="Markdown" value="35" />
           <entry key="PLAIN_TEXT" value="62" />
           <entry key="PROTO" value="10" />
@@ -148,34 +144,34 @@
         <counts>
           <entry key="Dockerfile" value="191" />
           <entry key="bat" value="47" />
-          <entry key="css" value="109" />
+          <entry key="css" value="146" />
           <entry key="docker" value="1" />
           <entry key="gitignore" value="29" />
           <entry key="html" value="196" />
           <entry key="http" value="359" />
           <entry key="java" value="6525" />
-          <entry key="js" value="3543" />
-          <entry key="json" value="150" />
+          <entry key="js" value="4745" />
+          <entry key="json" value="151" />
           <entry key="md" value="2102" />
           <entry key="properties" value="12" />
           <entry key="pub" value="3" />
           <entry key="sh" value="1215" />
-          <entry key="txt" value="247" />
+          <entry key="txt" value="256" />
           <entry key="xml" value="413" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="1262" />
-          <entry key="CSS" value="109" />
+          <entry key="CSS" value="146" />
           <entry key="Dockerfile" value="191" />
           <entry key="HTML" value="196" />
           <entry key="HTTP Request" value="353" />
           <entry key="JAVA" value="6525" />
-          <entry key="JSON" value="153" />
-          <entry key="JavaScript" value="3543" />
+          <entry key="JSON" value="154" />
+          <entry key="JavaScript" value="4745" />
           <entry key="Markdown" value="2055" />
-          <entry key="PLAIN_TEXT" value="327" />
+          <entry key="PLAIN_TEXT" value="336" />
           <entry key="Properties" value="12" />
           <entry key="Scratch" value="3" />
           <entry key="XML" value="413" />
@@ -246,35 +242,58 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/main/react/src/App.js">
+        <entry file="file://$PROJECT_DIR$/java/src/main/react/src/Cliente.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="395">
+              <caret line="118" column="84" selection-start-line="118" selection-start-column="84" selection-end-line="118" selection-end-column="84" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <element signature="n#!!block;n#componentWillMount#0;n#Cliente#0" />
+                <element signature="n#!!block;n#componentDidUpdate#0;n#Cliente#0" />
+                <element signature="e#830#2931#0" />
+                <element signature="e#4912#5720#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/src/main/react/src/Painel.js">
+        <entry file="file://$PROJECT_DIR$/java/src/main/react/src/Cliente.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-935">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="n#!!block;n#sendStatus#0;n#App#0" />
-                <element signature="n#!!block;n#sendQuery#0;n#App#0" />
-                <element signature="n#!!block;n#handleInputChange#0;n#App#0" />
-              </folding>
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/main/react/src/Cliente.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/java/src/main/react/src/Painel.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/src/main/react/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/src/main/react/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="39" selection-start-line="37" selection-end-line="39" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -322,8 +341,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/docker/iroha-ex/build.bat" />
-        <option value="$PROJECT_DIR$/docker/iroha-ex/push.bat" />
         <option value="$PROJECT_DIR$/docker/iroha-ex/irosh.sh" />
         <option value="$PROJECT_DIR$/docker/iroha-cli-teste/README.md" />
         <option value="$PROJECT_DIR$/java/src/main/java/com/github/frkr/finaudit/Teste.java" />
@@ -371,8 +388,10 @@
         <option value="$PROJECT_DIR$/docker/iroha-local/genesis.json" />
         <option value="$PROJECT_DIR$/java/src/main/react/package.json" />
         <option value="$PROJECT_DIR$/java/src/main/react/src/App.css" />
-        <option value="$PROJECT_DIR$/java/src/main/react/src/Painel.js" />
         <option value="$PROJECT_DIR$/java/src/main/react/src/App.js" />
+        <option value="$PROJECT_DIR$/java/src/main/react/src/Painel.js" />
+        <option value="$PROJECT_DIR$/java/src/main/react/src/Cliente.css" />
+        <option value="$PROJECT_DIR$/java/src/main/react/src/Cliente.js" />
       </list>
     </option>
   </component>
@@ -823,7 +842,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <compactDirectories Scope="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
@@ -877,6 +896,10 @@
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
+            <path>
+              <item name="finaudit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
             <path>
               <item name="finaudit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="finaudit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
@@ -1593,7 +1616,35 @@
       <option name="project" value="LOCAL" />
       <updated>1537558568468</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="mais dominios">
+      <created>1537565764159</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1537565764159</updated>
+    </task>
+    <task id="LOCAL-00034" summary="mais dominios">
+      <created>1537565833541</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1537565833541</updated>
+    </task>
+    <task id="LOCAL-00035" summary="estilos">
+      <created>1537655108157</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1537655108157</updated>
+    </task>
+    <task id="LOCAL-00036" summary="estilos">
+      <created>1537657829391</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1537657829391</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -1614,15 +1665,15 @@
       <window_info id="Designer" order="1" />
       <window_info id="npm" order="2" sideWeight="0.43486238" side_tool="true" weight="0.14228188" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Structure" order="4" sideWeight="0.43776223" side_tool="true" visible="true" weight="0.1442953" />
+      <window_info id="Structure" order="4" sideWeight="0.4375" side_tool="true" weight="0.1442953" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.56223774" visible="true" weight="0.1442953" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5625" weight="0.1442953" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="0" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49530202" weight="0.35104895" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.504698" side_tool="true" weight="0.35104895" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49463087" weight="0.35104895" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.5053691" side_tool="true" weight="0.35104895" />
       <window_info anchor="bottom" id="Docker" order="4" sideWeight="0.50067115" side_tool="true" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.49127516" side_tool="true" weight="0.23916084" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50201344" side_tool="true" weight="0.5902098" />
       <window_info anchor="bottom" id="Messages" order="6" sideWeight="0.49798658" weight="0.32867134" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
@@ -1635,6 +1686,7 @@
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49798658" weight="0.5902098" />
       <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.4986577" weight="0.32867134" />
       <window_info anchor="bottom" id="TypeScript" order="17" weight="0.32863188" />
+      <window_info anchor="right" x="0" y="0" width="337" height="648" id="Documentation" side_tool="true" weight="0.3295302" />
       <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.49506348" weight="0.08389262" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" id="Bean Validation" order="2" weight="0.3295302" />
@@ -1650,13 +1702,13 @@
       <window_info id="Designer" order="1" />
       <window_info id="npm" order="2" sideWeight="0.43486238" side_tool="true" weight="0.14228188" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Structure" order="4" sideWeight="0.43216783" side_tool="true" weight="0.14026846" />
+      <window_info id="Structure" order="4" sideWeight="0.4375" side_tool="true" weight="0.1442953" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.5643382" visible="true" weight="0.1442953" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5625" visible="true" weight="0.1442953" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="0" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49530202" visible="true" weight="0.35104895" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.504698" side_tool="true" visible="true" weight="0.35104895" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49463087" weight="0.35104895" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.5053691" side_tool="true" weight="0.35104895" />
       <window_info anchor="bottom" id="Docker" order="4" sideWeight="0.50067115" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.49127516" side_tool="true" weight="0.23916084" />
       <window_info anchor="bottom" id="Messages" order="6" sideWeight="0.49798658" weight="0.32867134" />
@@ -1668,18 +1720,19 @@
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.5087248" weight="0.23916084" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.18741259" />
-      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49798658" weight="0.5902098" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="15" sideWeight="0.49798658" visible="true" weight="0.5902098" />
       <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.4986577" weight="0.32867134" />
       <window_info anchor="bottom" id="TypeScript" order="17" weight="0.32863188" />
-      <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.49506348" weight="0.08389262" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
-      <window_info anchor="right" id="Bean Validation" order="2" weight="0.3295302" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info anchor="right" id="Database" order="7" sideWeight="0.5049365" side_tool="true" weight="0.1785235" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3295302" />
+      <window_info anchor="right" x="0" y="0" width="337" height="648" id="Documentation" order="0" side_tool="true" weight="0.3295302" />
+      <window_info anchor="right" id="Maven Projects" order="1" sideWeight="0.49506348" weight="0.08389262" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24966443" />
+      <window_info anchor="right" id="Bean Validation" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Database" order="8" sideWeight="0.5049365" side_tool="true" weight="0.1785235" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3295302" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1733,7 +1786,8 @@
     <MESSAGE value="Iroha REST Query" />
     <MESSAGE value="Iroha REST Query (all)" />
     <MESSAGE value="mais dominios" />
-    <option name="LAST_COMMIT_MESSAGE" value="mais dominios" />
+    <MESSAGE value="estilos" />
+    <option name="LAST_COMMIT_MESSAGE" value="estilos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1785,13 +1839,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docker/iroha-local/admin@conta2.priv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="64" lean-forward="true" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker/iroha-local/build.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -2119,6 +2166,9 @@
     <entry file="file://$PROJECT_DIR$/java/src/main/react/node_modules/purecss/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/react/node_modules/purecss/build/pure.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/react/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -2126,46 +2176,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/react/node_modules/purecss/build/pure.css">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/Painel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/react/src/Painel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/react/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" lean-forward="true" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="39" selection-start-line="37" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/react/src/Cliente.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="395">
+          <caret line="118" column="84" selection-start-line="118" selection-start-column="84" selection-end-line="118" selection-end-column="84" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#componentWillMount#0;n#Cliente#0" />
+            <element signature="n#!!block;n#componentDidUpdate#0;n#Cliente#0" />
+            <element signature="e#830#2931#0" />
+            <element signature="e#4912#5720#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/Painel.js">
+    <entry file="file://$PROJECT_DIR$/java/src/main/react/src/Cliente.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-935">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="n#!!block;n#sendStatus#0;n#App#0" />
-            <element signature="n#!!block;n#sendQuery#0;n#App#0" />
-            <element signature="n#!!block;n#handleInputChange#0;n#App#0" />
-          </folding>
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -2235,6 +2297,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

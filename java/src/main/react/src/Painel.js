@@ -41,8 +41,18 @@ class Painel extends Component {
             precision: "2",
             tran_ast: "",
             crt_ast: "",
-            add_ast_qty:""
+            add_ast_qty: ""
         };
+    }
+
+    componentWillMount() {
+        if (localStorage.getItem('painel')) {
+            this.setState(JSON.parse(localStorage.getItem("painel")));
+        }
+    }
+
+    componentDidUpdate() {
+        localStorage.setItem("painel", JSON.stringify(this.state));
     }
 
     sendStatus() {
@@ -65,7 +75,7 @@ class Painel extends Component {
 
     sendQuery(bt) {
         const qry = bt.target.name;
-        this.setState({[qry]:""})
+        this.setState({[qry]: ""})
         fetch(CONTEXT + "/rs/query", {
             method: 'post',
             headers: this.headersDefault,
@@ -80,12 +90,12 @@ class Painel extends Component {
                 role: this.state.role,
                 asset: this.state.asset
             })
-        }).then(res => res.text()).then(resp => this.setState({[qry]:resp}));
+        }).then(res => res.text()).then(resp => this.setState({[qry]: resp}));
     }
 
     sendTrx(bt) {
         const trx = bt.target.name;
-        this.setState({[trx]:""});
+        this.setState({[trx]: ""});
         fetch(CONTEXT + "/rs/trx", {
             method: 'post',
             headers: this.headersDefault,
@@ -102,7 +112,7 @@ class Painel extends Component {
                 amount: this.state.amount,
                 precision: this.state.precision
             })
-        }).then(res => res.text()).then(resp => this.setState({[trx]:resp}));
+        }).then(res => res.text()).then(resp => this.setState({[trx]: resp}));
     }
 
     handleInputChange(event) {
@@ -118,6 +128,7 @@ class Painel extends Component {
     render() {
         return (
             <div>
+                <h3>Painel</h3>
                 <h3>Base</h3>
                 <table cellPadding="5" cellSpacing="0" border="1">
                     <tbody>
@@ -130,12 +141,18 @@ class Painel extends Component {
                         <td>Porta</td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="accn"     value={this.state.accn}     onChange={this.handleInputChange}/></td>
-                        <td><input type="text" name="accnPass" value={this.state.accnPass} onChange={this.handleInputChange}/></td>
-                        <td><input type="text" name="accnPriv" value={this.state.accnPriv} onChange={this.handleInputChange}/></td>
-                        <td><input type="text" name="accnPub"  value={this.state.accnPub}  onChange={this.handleInputChange}/></td>
-                        <td><input type="text" name="server"   value={this.state.server}   onChange={this.handleInputChange}/></td>
-                        <td><input type="text" name="torii"    value={this.state.torii}    onChange={this.handleInputChange}/></td>
+                        <td><input type="text" name="accn" value={this.state.accn} onChange={this.handleInputChange}/>
+                        </td>
+                        <td><input type="text" name="accnPass" value={this.state.accnPass}
+                                   onChange={this.handleInputChange}/></td>
+                        <td><input type="text" name="accnPriv" value={this.state.accnPriv}
+                                   onChange={this.handleInputChange}/></td>
+                        <td><input type="text" name="accnPub" value={this.state.accnPub}
+                                   onChange={this.handleInputChange}/></td>
+                        <td><input type="text" name="server" value={this.state.server}
+                                   onChange={this.handleInputChange}/></td>
+                        <td><input type="text" name="torii" value={this.state.torii} onChange={this.handleInputChange}/>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -144,11 +161,16 @@ class Painel extends Component {
                     <tbody>
                     <tr>
                         <td>HASH Transa&ccedil;&atilde;o</td>
-                        <td><button onClick={this.sendStatus}>Get Status</button></td>
+                        <td>
+                            <button onClick={this.sendStatus}>Get Status</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="hash"     value={this.state.hash}     onChange={this.handleInputChange}/></td>
-                        <td><pre>{this.state.status}</pre></td>
+                        <td><input type="text" name="hash" value={this.state.hash} onChange={this.handleInputChange}/>
+                        </td>
+                        <td>
+                            <pre>{this.state.status}</pre>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -162,10 +184,14 @@ class Painel extends Component {
                         <td>Precisao</td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="destination"    value={this.state.destination}    onChange={this.handleInputChange}/></td>
-                        <td><input type="text" name="asset"    value={this.state.asset}    onChange={this.handleInputChange}/></td>
-                        <td><input type="text" name="amount"    value={this.state.amount}    onChange={this.handleInputChange}/></td>
-                        <td><input type="text" name="precision"    value={this.state.precision}    onChange={this.handleInputChange}/></td>
+                        <td><input type="text" name="destination" value={this.state.destination}
+                                   onChange={this.handleInputChange}/></td>
+                        <td><input type="text" name="asset" value={this.state.asset} onChange={this.handleInputChange}/>
+                        </td>
+                        <td><input type="text" name="amount" value={this.state.amount}
+                                   onChange={this.handleInputChange}/></td>
+                        <td><input type="text" name="precision" value={this.state.precision}
+                                   onChange={this.handleInputChange}/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -179,18 +205,52 @@ class Painel extends Component {
                         </td>
                         <td>&nbsp;</td>
                     </tr>
-                    <tr><td><button name="tran_ast" onClick={(button) => this.sendTrx(button)}>5. Transfer Assets (tran_ast)</button></td><td><pre>{this.state.tran_ast}</pre></td></tr>
-                    <tr><td className="small">6x Grant permission over your account (grant_perm)
-                        <br/>7x Subtract Assets Quantity from Account (sub_ast_qty)
-                        <br/>8x Set Account Quorum (set_qrm)
-                        <br/>9x Remove Signatory (rem_sign)
-                        <br/>10x Create Domain (crt_dmn)
-                        <br/>11x Revoke permission from account (revoke_perm)
-                        <br/>12x Create Account (crt_acc)
-                        <br/>13x Add Signatory to Account (add_sign)</td><td>&nbsp;</td></tr>
-                    <tr><td><button name="crt_ast" onClick={(button) => this.sendTrx(button)}>14. Create Asset (crt_ast)</button></td><td><pre>{this.state.crt_ast}</pre></td></tr>
-                    <tr><td className="small">15x Add Peer to Iroha Network (add_peer)</td><td>&nbsp;</td></tr>
-                    <tr><td><button name="add_ast_qty" onClick={(button) => this.sendTrx(button)}>16. Add Asset Quantity (add_ast_qty)</button></td><td><pre>{this.state.add_ast_qty}</pre></td></tr>
+                    <tr>
+                        <td>
+                            <button name="tran_ast" onClick={(button) => this.sendTrx(button)}>5. Transfer Assets
+                                (tran_ast)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.tran_ast}</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td className="small">6x Grant permission over your account (grant_perm)
+                            <br/>7x Subtract Assets Quantity from Account (sub_ast_qty)
+                            <br/>8x Set Account Quorum (set_qrm)
+                            <br/>9x Remove Signatory (rem_sign)
+                            <br/>10x Create Domain (crt_dmn)
+                            <br/>11x Revoke permission from account (revoke_perm)
+                            <br/>12x Create Account (crt_acc)
+                            <br/>13x Add Signatory to Account (add_sign)
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button name="crt_ast" onClick={(button) => this.sendTrx(button)}>14. Create Asset
+                                (crt_ast)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.crt_ast}</pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td className="small">15x Add Peer to Iroha Network (add_peer)</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button name="add_ast_qty" onClick={(button) => this.sendTrx(button)}>16. Add Asset Quantity
+                                (add_ast_qty)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.add_ast_qty}</pre>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
                 <h3>Query</h3>
@@ -201,48 +261,98 @@ class Painel extends Component {
                         <td>Boleta</td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="role"     value={this.state.role}     onChange={this.handleInputChange}/></td>
-                        <td><input type="text" name="asset"     value={this.state.asset}     onChange={this.handleInputChange}/></td>
+                        <td><input type="text" name="role" value={this.state.role} onChange={this.handleInputChange}/>
+                        </td>
+                        <td><input type="text" name="asset" value={this.state.asset} onChange={this.handleInputChange}/>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
                 <table cellPadding="5" cellSpacing="0" border="1">
                     <tbody>
                     <tr>
-                        <td><button name="get_role_perm" onClick={(button) => this.sendQuery(button)}>1. Get all permissions related to role (get_role_perm)</button></td>
-                        <td><pre>{this.state.get_role_perm}</pre></td>
+                        <td>
+                            <button name="get_role_perm" onClick={(button) => this.sendQuery(button)}>1. Get all
+                                permissions related to role (get_role_perm)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.get_role_perm}</pre>
+                        </td>
                     </tr>
                     <tr>
                         <td className="small">2x Get Transactions by transactions' hashes (get_tx)</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td><button name="get_ast_info" onClick={(button) => this.sendQuery(button)}>3. Get information about asset (get_ast_info)</button></td>
-                        <td><pre>{this.state.get_ast_info}</pre></td>
+                        <td>
+                            <button name="get_ast_info" onClick={(button) => this.sendQuery(button)}>3. Get information
+                                about asset (get_ast_info)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.get_ast_info}</pre>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button name="get_acc_tx" onClick={(button) => this.sendQuery(button)}>4. Get Account's Transactions (get_acc_tx)</button></td>
-                        <td><pre>{this.state.get_acc_tx}</pre></td>
+                        <td>
+                            <button name="get_acc_tx" onClick={(button) => this.sendQuery(button)}>4. Get Account's
+                                Transactions (get_acc_tx)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.get_acc_tx}</pre>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button name="get_acc_ast_tx" onClick={(button) => this.sendQuery(button)}>5. Get Account's Asset Transactions (get_acc_ast_tx)</button></td>
-                        <td><pre>{this.state.get_acc_ast_tx}</pre></td>
+                        <td>
+                            <button name="get_acc_ast_tx" onClick={(button) => this.sendQuery(button)}>5. Get Account's
+                                Asset Transactions (get_acc_ast_tx)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.get_acc_ast_tx}</pre>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button name="get_roles" onClick={(button) => this.sendQuery(button)}>6. Get all current roles in the system (get_roles)</button></td>
-                        <td><pre>{this.state.get_roles}</pre></td>
+                        <td>
+                            <button name="get_roles" onClick={(button) => this.sendQuery(button)}>6. Get all current
+                                roles in the system (get_roles)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.get_roles}</pre>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button name="get_acc_sign" onClick={(button) => this.sendQuery(button)}>7. Get Account's Signatories (get_acc_sign)</button></td>
-                        <td><pre>{this.state.get_acc_sign}</pre></td>
+                        <td>
+                            <button name="get_acc_sign" onClick={(button) => this.sendQuery(button)}>7. Get Account's
+                                Signatories (get_acc_sign)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.get_acc_sign}</pre>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button name="get_acc_ast" onClick={(button) => this.sendQuery(button)}>8. Get Account's Assets (get_acc_ast)</button></td>
-                        <td><pre>{this.state.get_acc_ast}</pre></td>
+                        <td>
+                            <button name="get_acc_ast" onClick={(button) => this.sendQuery(button)}>8. Get Account's
+                                Assets (get_acc_ast)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.get_acc_ast}</pre>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button name="get_acc" onClick={(button) => this.sendQuery(button)}>9. Get Account Information (get_acc)</button></td>
-                        <td><pre>{this.state.get_acc}</pre></td>
+                        <td>
+                            <button name="get_acc" onClick={(button) => this.sendQuery(button)}>9. Get Account
+                                Information (get_acc)
+                            </button>
+                        </td>
+                        <td>
+                            <pre>{this.state.get_acc}</pre>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
