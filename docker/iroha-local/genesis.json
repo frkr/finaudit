@@ -84,13 +84,6 @@
                 }
               },
               {
-                "createAsset": {
-                  "assetName": "conta1",
-                  "domainId": "cliente1",
-                  "precision": 2
-                }
-              },
-              {
                 "createAccount": {
                   "accountName": "admin",
                   "domainId": "cliente1",
