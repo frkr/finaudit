@@ -1,5 +1,7 @@
 package com.github.frkr.finaudit.service.iroha;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class BaseRequest {
 
     private String accn;
@@ -8,6 +10,7 @@ public class BaseRequest {
     private String accnPass;
     private String server;
     private String torii;
+    private String send;
 
     public String getAccn() {
         return accn;
@@ -55,5 +58,14 @@ public class BaseRequest {
 
     public void setTorii(String torii) {
         this.torii = torii;
+    }
+
+    @ApiModelProperty("Não enviar para o servidor. Retorna um JSON assinado")
+    public String getSend() {
+        return send;
+    }
+
+    public void setSend(String send) {
+        this.send = send;
     }
 }

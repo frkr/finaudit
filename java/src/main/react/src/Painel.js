@@ -18,16 +18,17 @@ class Painel extends Component {
 
         this.state = {
             texto: "",
-            accn: "admin@cliente1",
+            accn: "usrfinan@cliente1",
             accnPass: "",
-            accnPriv: "f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70",
-            accnPub:  "313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910",
+            accnPriv: "7e00405ece477bb6dd9b03a78eee4e708afc2f5bcdce399573a5958942f4a390",
+            accnPub:  "716fe505f69f18511a1b083915aa9ff73ef36e6688199f3959750db38b8f4bfc",
             hash: "fdd85f506a57000471c159dabe5deba4338b1bc5f83c90c77fb875bef963f7a7",
             server: "irohad-zero",
             torii: "50051",
+            send: "true",
             status: "",
-            role: "admin",
-            asset: "conta1#cliente1",
+            role: "user",
+            asset: "conta80#cliente1",
             get_role_perm: "",
             get_ast_info: "",
             get_acc_tx: "",
@@ -37,7 +38,7 @@ class Painel extends Component {
             get_acc_ast: "",
             get_acc: "",
             amount: "100.0",
-            destination: "admin@cliente2",
+            destination: "admin@central",
             precision: "2",
             tran_ast: "",
             crt_ast: "",
@@ -67,6 +68,7 @@ class Painel extends Component {
                 accnPub: this.state.accnPub,
                 server: this.state.server,
                 torii: this.state.torii,
+                send: this.state.send,
                 hash: this.state.hash,
                 status: "get_tx_info"
             })
@@ -86,6 +88,7 @@ class Painel extends Component {
                 accnPub: this.state.accnPub,
                 server: this.state.server,
                 torii: this.state.torii,
+                send: this.state.send,
                 query: qry,
                 role: this.state.role,
                 asset: this.state.asset
@@ -106,6 +109,7 @@ class Painel extends Component {
                 accnPub: this.state.accnPub,
                 server: this.state.server,
                 torii: this.state.torii,
+                send: this.state.send,
                 transaction: trx,
                 destination: this.state.destination,
                 asset: this.state.asset,
@@ -139,6 +143,7 @@ class Painel extends Component {
                         <td>Chave Publica</td>
                         <td>Servidor</td>
                         <td>Porta</td>
+                        <td>Enviar</td>
                     </tr>
                     <tr>
                         <td><input type="text" name="accn" value={this.state.accn} onChange={this.handleInputChange}/>
@@ -152,6 +157,8 @@ class Painel extends Component {
                         <td><input type="text" name="server" value={this.state.server}
                                    onChange={this.handleInputChange}/></td>
                         <td><input type="text" name="torii" value={this.state.torii} onChange={this.handleInputChange}/>
+                        </td>
+                        <td><input type="text" name="send" value={this.state.send} onChange={this.handleInputChange}/>
                         </td>
                     </tr>
                     </tbody>

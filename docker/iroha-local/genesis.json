@@ -73,27 +73,20 @@
               },
               {
                 "createDomain": {
-                  "domainId": "cliente1",
+                  "domainId": "central",
                   "defaultRole": "user"
                 }
               },
               {
                 "createDomain": {
-                  "domainId": "cliente2",
+                  "domainId": "cliente1",
                   "defaultRole": "user"
                 }
               },
               {
                 "createAccount": {
                   "accountName": "admin",
-                  "domainId": "cliente1",
-                  "mainPubkey": "MToH5jhHdu2VRHcQ0V5ZFIRzzPwFKmgTF6cqafKkmRA="
-                }
-              },
-              {
-                "createAccount": {
-                  "accountName": "admin",
-                  "domainId": "cliente2",
+                  "domainId": "central",
                   "mainPubkey": "MToH5jhHdu2VRHcQ0V5ZFIRzzPwFKmgTF6cqafKkmRA="
                 }
               },
@@ -106,25 +99,13 @@
               },
               {
                 "appendRole": {
-                  "accountId": "admin@cliente1",
+                  "accountId": "admin@central",
                   "roleName": "admin"
                 }
               },
               {
                 "appendRole": {
-                  "accountId": "admin@cliente2",
-                  "roleName": "admin"
-                }
-              },
-              {
-                "appendRole": {
-                  "accountId": "admin@cliente1",
-                  "roleName": "money_creator"
-                }
-              },
-              {
-                "appendRole": {
-                  "accountId": "admin@cliente2",
+                  "accountId": "admin@central",
                   "roleName": "money_creator"
                 }
               },

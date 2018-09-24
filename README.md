@@ -19,7 +19,10 @@ docker run -d --name postgres-audit -e POSTGRES_USER=postgres -e POSTGRES_PASSWO
 
 ##### Iroha CA
 ```bash
-docker run --rm frkr/iroha-ca alice@ru mysupersecretpassword
+docker run --rm frkr/iroha-ca
+```
+```bash
+docker run --rm frkr/iroha-ca mysupersecretpassword
 ```
 
 ##### Irohad node ZERO
@@ -89,10 +92,10 @@ docker run --rm --network=iroha-network frkr/iroha-ex admin@test f101537e319568c
 
 ## Native
 ```bash
-docker run -it --rm --network=iroha-network --entrypoint=/bin/bash hyperledger/iroha
-echo f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70 > admin@test.priv
-echo 313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910 > admin@test.pub
+#docker run -it --rm --network=iroha-network --entrypoint=/bin/bash hyperledger/iroha
+docker run -it --rm --network=iroha-network --entrypoint=/bin/bash frkr/iroha-ca
+echo 7e00405ece477bb6dd9b03a78eee4e708afc2f5bcdce399573a5958942f4a390 > usrfinan@cliente1.priv
+echo 716fe505f69f18511a1b083915aa9ff73ef36e6688199f3959750db38b8f4bfc > usrfinan@cliente1.pub
 
-iroha-cli -account_name admin@test --key_path ./ 
+iroha-cli -account_name usrfinan@cliente1 --key_path ./ 
 ```
-

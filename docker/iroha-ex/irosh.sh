@@ -23,5 +23,9 @@ else
     rm $1.priv
     rm $1.pub
     rm in.txt
+    if [ -e "teste.json" ]
+    then
+        cat teste.json
+    fi
     echo "-END-"
 fi
