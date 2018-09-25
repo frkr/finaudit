@@ -10,16 +10,18 @@ import java.io.InputStreamReader;
 
 public class DockerCmd {
 
-    //FIXME Deletar conteudos hardcoded
     public final static String DOCKER_CMD1 = "docker";
     public final static String DOCKER_HOST = "-H 127.0.0.1:2375";
     public final static String DOCKER_CMD2 = "run --rm --network=iroha-network frkr/iroha-ex";
-    public final static String ACCN = "admin@test";
-    public final static String ACCN_PRIV = "f101537e319568c765b2cc89698325604991dca57b9716b58016b253506cab70";
-    public final static String ACCN_PUB = "313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910";
+    public final static String ACCN = "usrfinan@cliente1";
+
+    //region FIXME Deletar conteudos hardcoded
+    public final static String ACCN_PRIV = "7e00405ece477bb6dd9b03a78eee4e708afc2f5bcdce399573a5958942f4a390";
+    public final static String ACCN_PUB = "716fe505f69f18511a1b083915aa9ff73ef36e6688199f3959750db38b8f4bfc";
     public final static String ACCN_PASS = "";
     public final static String SERVER = "irohad-zero";
     public final static String TORII = "50051";
+    //endregion
 
     private String accn;
     private String accnPriv;
@@ -81,7 +83,11 @@ public class DockerCmd {
         System.out.println();
 
         try {
-            return retorno.toString().split(".50051.: ")[1].split("--------------------")[0];
+            String retornoStr = retorno.toString().split(".50051.: ")[1].split("--------------------")[0]
+                    .replaceAll("\\[.*info\\] QueryResponseHandler ", "")
+                    ;
+
+            return retornoStr;
         } catch (Exception e) {
             // FIXME Erro retorno
         }
@@ -103,7 +109,7 @@ public class DockerCmd {
 
             TransactionRequest cmd = (TransactionRequest) request;
             retorno.append(cmd.getTransaction().getCmd());
-                retorno.append("\\n");
+            retorno.append("\\n");
 
             if (cmd.getTransaction().equals(IrohaTransaction.detach)
                     || cmd.getTransaction().equals(IrohaTransaction.apnd_role)
@@ -141,7 +147,7 @@ public class DockerCmd {
                 retorno.append(cmd.getAmount());
                 retorno.append("\\n");
                 retorno.append(cmd.getAmount());
-           }
+            }
         } else if (request instanceof QueryRequest) {
             retorno.append(IrohaCommand.QRY.getCmd());
             retorno.append("\\n");
@@ -179,14 +185,26 @@ public class DockerCmd {
 
         retorno.append("\\n");
         if (request instanceof TransactionRequest) {
-            retorno.append("2"); // Enviar para o servidor
+            if ("false".equals(request.getSend())) {
+                retorno.append("4"); // Salvar em JSON
+            } else {
+                retorno.append("2"); // Enviar para o servidor
+            }
         } else {
-            retorno.append("1"); // Enviar para o servidor
+            if ("false".equals(request.getSend())) {
+                retorno.append("2"); // Salvar em JSON
+            } else {
+                retorno.append("1"); // Enviar para o servidor
+            }
         }
         retorno.append("\\n");
-        retorno.append(request.getServer());
-        retorno.append("\\n");
-        retorno.append(request.getTorii());
+        if ("false".equals(request.getSend())) {
+            retorno.append("teste.json");
+        } else {
+            retorno.append(request.getServer());
+            retorno.append("\\n");
+            retorno.append(request.getTorii());
+        }
         retorno.append("\\n");
         retorno.append("\"");
 
@@ -203,14 +221,15 @@ public class DockerCmd {
         request.setServer(SERVER);
         request.setTorii(TORII);
 
+//        request.setSend("false");
+
         request.setQuery(IrohaQuery.get_acc_tx);
         request.setRole("admin");
         request.setAsset("coin#test");
 
 //        request.setTransaction(IrohaTransaction.add_ast_qty);
-//        request.setDestination("test@test");
-//        request.setAsset("coin#test");
-//        request.setAsset("estaleca#test");
+//        request.setDestination("admin@central");
+//        request.setAsset("conta80#cliente1");
 //        request.setAmount("100.00");
 //        request.setPrecision("2");
 
