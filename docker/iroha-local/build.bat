@@ -1,1 +1,1 @@
-docker build -t irohad:local .
+docker build -t frkr/irohad-local .

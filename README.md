@@ -31,6 +31,9 @@ irohad-local/build.bat
 
 docker run -d --name irohad-zero -p 50051:50051 --network=iroha-network irohad:local
 docker logs -f irohad-zero
+
+#docker run -d --name irohad-zero -p 50051:50051 --network=iroha-network frkr/irohad-local
+#docker run -d --name iroha-rest -p 80:80 frkr/finaudit
 ```
 
 ##### Iroha CLI
@@ -71,6 +74,11 @@ docker logs -f irohad-zero
 # Run Interface
 ```bash
 mvn spring-boot:run
+```
+## Docker build
+```
+mvn clean package docker:build
+mvn clean package docker:build -DpushImage
 ```
 - [http://localhost](http://localhost)
 

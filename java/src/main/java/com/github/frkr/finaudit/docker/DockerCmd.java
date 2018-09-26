@@ -58,7 +58,7 @@ public class DockerCmd {
         shellcmd.append(" ");
         shellcmd.append(accnPub);
         shellcmd.append(" ");
-        shellcmd.append(getPipe(request));
+        shellcmd.append(getPipe(request, win));
         if (accnPass != null && !"".equals(accnPass) && !"null".equals(accnPass)) {
             shellcmd.append(" ");
             shellcmd.append(accnPass);
@@ -84,8 +84,7 @@ public class DockerCmd {
 
         try {
             String retornoStr = retorno.toString().split(".50051.: ")[1].split("--------------------")[0]
-                    .replaceAll("\\[.*info\\] QueryResponseHandler ", "")
-                    ;
+                    .replaceAll("\\[.*info\\] QueryResponseHandler ", "");
 
             return retornoStr;
         } catch (Exception e) {
@@ -98,11 +97,13 @@ public class DockerCmd {
      * @param request {@link BaseRequest}
      * @return docker output string
      */
-    public static String getPipe(BaseRequest request) throws Exception {
+    public static String getPipe(BaseRequest request, boolean win) throws Exception {
 //        return "\"3\\n9\\nadmin@test\\n1\\nirohad-zero\\n50051\\n\"";
 
         StringBuilder retorno = new StringBuilder();
-        retorno.append("\"");
+        if (win) {
+            retorno.append("\"");
+        }
         if (request instanceof TransactionRequest) {
             retorno.append(IrohaCommand.TX.getCmd());
             retorno.append("\\n");
@@ -206,7 +207,9 @@ public class DockerCmd {
             retorno.append(request.getTorii());
         }
         retorno.append("\\n");
-        retorno.append("\"");
+        if (win) {
+            retorno.append("\"");
+        }
 
         return retorno.toString();
     }
