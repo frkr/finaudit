@@ -62,8 +62,8 @@ class Cliente extends Component {
 
         let loopCountStatus = 1;
         let loopFncStatus = (status) => {
-            if (loopCountStatus === 4) {
-                alert("Erro: criarAtivoDinheiro. loopCount == 4 STATUS");
+            if (loopCountStatus >= 60) {
+                alert("Timeout: CheckStatus");
             } else {
                 let idx = this.state[msg].indexOf("DETAIL:");
                 if (idx === -1) {
@@ -80,7 +80,7 @@ class Cliente extends Component {
                         );
 
                         loopCountStatus++;
-                        setTimeout(() => loopFncStatus(status), loopCountStatus * 5 * 1000);
+                        setTimeout(() => loopFncStatus(status), 1000);
                     } else {
                         fnc();
                     }
@@ -199,8 +199,6 @@ class Cliente extends Component {
         tgt.disabled = "disabled";
 
         this.setState({[dst]: ""});
-        const el = document.getElementById(dst);
-        el.classList.remove("invisible");
 
         this.checkQuery(
             () => tgt.disabled = "",
@@ -252,13 +250,13 @@ class Cliente extends Component {
 
         let loopCountTrx = 1;
         let loopFncTrx = () => {
-            if (loopCountTrx === 4) {
-                alert("Erro: criarAtivoDinheiro. loopCount == 4 Check TRX");
+            if (loopCountTrx === 60) {
+                alert("Timeout: checkTransaction");
             } else {
                 let idx = this.state[msg].indexOf("Its hash is ");
                 if (idx === -1) {
                     loopCountTrx++;
-                    setTimeout(loopFncTrx, loopCountTrx * 5 * 1000);
+                    setTimeout(loopFncTrx, 1000);
                 } else {
                     let status = this.state[msg].substring(idx + 11).trim();
                     this.setState({
@@ -630,7 +628,7 @@ class Cliente extends Component {
                                         }>Listar Transações
                                 </button>
                             </div>
-                            <pre className="invisible" id="getCentralTxTxt2">{this.state.getCentralTxTxt2}</pre>
+                            <pre id="getCentralTxTxt2">{this.state.getCentralTxTxt2}</pre>
                         </div>
                     </fieldset>
                 </form>
